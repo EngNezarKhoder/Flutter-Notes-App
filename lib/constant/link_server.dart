@@ -1,5 +1,5 @@
 const String linkServer = "http://192.168.124.248:8012/Course_Php"; 
-const String linkImageRoute = "http://192.168.188.248:8012/Course_Php/upload";
+const String linkImageRoute = "http://192.168.124.248:8012/Course_Php/upload";
 
 const String signUpLink = "$linkServer/auth/sign_up.php";
 const String loginLink = "$linkServer/auth/login.php";
