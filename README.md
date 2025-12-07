@@ -62,4 +62,4 @@ flutter run
 - Backend (PHP / MySQL) is not included in this repository 
 
 ## ⭐ Support
-- If you like this project, feel free to give it a star ⭐ on GitHub!
+- If you like this project, feel free to give it a star ⭐ on GitHub! 
