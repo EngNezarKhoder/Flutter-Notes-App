@@ -59,7 +59,7 @@ flutter run
 ## Notes
 - This repository contains only the Flutter frontend of the app.
 - Screenshots are stored in images/screenshots/
-- Backend (PHP / MySQL) is not included in this repository 
+- Backend (PHP / MySQL) is not included in this repository: https://github.com/EngNezarKhoder/Flutter-Notes-Backend
 
 ## ⭐ Support
 - If you like this project, feel free to give it a star ⭐ on GitHub! 
