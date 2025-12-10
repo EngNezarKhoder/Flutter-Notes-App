@@ -1,5 +1,6 @@
 import 'package:appnote/constant/link_server.dart';
 import 'package:appnote/cubit/category_state.dart';
+import 'package:appnote/model/category_model.dart';
 import 'package:appnote/widgets/crud.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -87,12 +88,12 @@ class CategoryCubit extends Cubit<CategoryState> {
     }
   }
 
-  Future<void> deleteCategory(String userId, String categoryId) async {
+  Future<void> deleteCategory(String userId, CategoryModel categoryModel) async {
     try {
       emit(state.copyWith(
           isLoading: true, clearError: true, clearSuccessFalg: true));
       var res = await _crud
-          .postRequest(deleteCategories, {"category_id": categoryId});
+          .postRequest(deleteCategories, {"category_id": categoryModel.categoryId.toString()});
       if (res['status'] == 'success') {
         emit(state.copyWith(
             isLoading: false, isDeletedSuccessfully: true, clearError: true));

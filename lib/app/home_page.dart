@@ -113,9 +113,7 @@ class HomePage extends StatelessWidget {
                         Navigator.of(context).pop();
                         context.read<CategoryCubit>().deleteCategory(
                             sharedPref.getString("id")!,
-                            CategoryModel.fromJson(state.categories[index])
-                                .categoryId
-                                .toString());
+                            CategoryModel.fromJson(state.categories[index]));
                       });
                     },
                     categoryModel:
